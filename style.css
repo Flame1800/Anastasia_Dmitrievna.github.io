@@ -1,4 +1,3 @@
-
 body {
 	margin: 0;
 	padding: 0;
@@ -171,11 +170,12 @@ margin-top: 100px;
   text-align: justify;  
 }
 .biografy1 img {
-	height: 390px;
+	height: 440px;
 	width: 460px;
-	border: 3px solid white;
-	margin-left: 30px;
-	margin-top: 100px;
+	border: 10px solid white;
+	border-radius: 10px;
+	margin-left: 60px;
+	margin-top: 60px;
 }
 
 .biografy2 {
@@ -206,157 +206,12 @@ margin-top: 100px;
   line-height: 1.2;
   text-indent: 30px;
   font-weight: 400;
-  margin-bottom: 80px; 
+	margin-bottom: 180px; 
+
 
 }
 
 
-
-.all {
-	z-index: 0;
-}
-
-#slider { /*положение слайдера*/
-    position: relative;
-	text-align: center;
-    top: 10px;
-}
-
-#slider{ /*центровка слайдера*/
-	margin: 0 auto;
-}
-
-#slides article{ /*все изображения справа друг от друга*/
-	width: 20%;
-	float: left;
-	z-index: 0;
-}
-
-#slides .image{ /*устанавливает общий размер блока с изображениями*/
-	width: 500%;
-	line-height: 0;
-}
-
-#overflow{ /*сркывает все, что находится за пределами этого блока*/
-	width: 100%;
-	overflow: hidden;
-}
-
-article img{ /*размер изображений слайдера*/
-	width: 100%;
-}
-
-#desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 960px; /*максимальнная длинна*/
-}
-
-/*настройка переключения и положения для левой стрелки*/
-/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
-#switch1:checked ~ #controls label:nth-child(5), 
-#switch2:checked ~ #controls label:nth-child(1),
-#switch3:checked ~ #controls label:nth-child(2),
-#switch4:checked ~ #controls label:nth-child(3),
-#switch5:checked ~ #controls label:nth-child(4){
-	background: url('img/prev.png') no-repeat; /*заливка фона картинкой без повторений*/
-	float: left;
-	margin: 0 0 0 -84px; /*сдвиг влево*/
-	display: block;
-	height: 68px;
-	width: 68px;
-}
-
-/*настройка переключения и положения для правой стрелки*/
-#switch1:checked ~ #controls label:nth-child(2), 
-#switch2:checked ~ #controls label:nth-child(3),
-#switch3:checked ~ #controls label:nth-child(4),
-#switch4:checked ~ #controls label:nth-child(5),
-#switch5:checked ~ #controls label:nth-child(1){
-	background: url('img/next.png') no-repeat; /*заливка фона картинкой без повторений*/
-	float: right;
-	margin: 0 -84px 0 0; /*сдвиг вправо*/
-	display: block;
-	height: 68px;
-	width: 68px;
-}
-
-label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
-	cursor: pointer;
-}
-
-.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
-	display: none;
-}
-
-.all {
-	margin-top: 60px;
-}
-
-/*позиция изображения при активации переключателя*/
-#switch1:checked ~ #slides .image{
-	margin-left: 0;
-}
-
-#switch2:checked ~ #slides .image{
-	margin-left: -100%;
-}
-
-#switch3:checked ~ #slides .image{
-	margin-left: -200%;
-}
-
-#switch4:checked ~ #slides .image{
-	margin-left: -300%;
-}
-
-#switch5:checked ~ #slides .image{
-	margin-left: -400%;
-}
-
-#controls{ /*положение блока всех управляющих элементов*/
-	margin: -25% 0 0 0;
-	width: 100%;
-	height: 50px;
-}
-
-#active label{ /*стиль отдельного переключателя*/
-	border-radius: 10px; /*скругление углов*/
-	display: inline-block; /*расположение в строку*/
-	width: 15px;
-	height: 15px;
-	background: #bbb;
-}
-
-#active{ /*расположение блока с переключателями*/
-	margin: 23% 0 0;
-	text-align: center;
-}
-
-#active label:hover{ /*поведение чекбокса при наведении*/
-	background: #76c8ff;
-	border-color: #777 !important; /*выполнение в любом случае*/
-}
-
-/*цвет активного лейбла при активации чекбокса*/
-#switch1:checked ~ #active label:nth-child(1),
-#switch2:checked ~ #active label:nth-child(2),
-#switch3:checked ~ #active label:nth-child(3),
-#switch4:checked ~ #active label:nth-child(4),
-#switch5:checked ~ #active label:nth-child(5){
-	background: #18a3dd;
-	border-color: #18a3dd !important;
-}
-
-#slides .image{ /*анимация пролистывания изображений*/
-	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-}
-
-#controls label:hover{ /*прозрачность стрелок при наведении*/
-	opacity: 0.6;
-}
-
-#controls label{ /*прозрачность стрелок при отводе курсора*/
-	transition: opacity 0.2s ease-out;
-}
 
 #ws_first_word p {
 
@@ -380,9 +235,7 @@ label, a{ /*при наведении на стрелки или переклю�
   text-align: center;
   margin-top: 0;
   padding-top: 20px;
-  margin-bottom: 0;
-  
-
+  margin-bottom: 0;  
 }
 
 
@@ -546,12 +399,14 @@ label, a{ /*при наведении на стрелки или переклю�
 
 .news .main_content {
 	
-	width: 1100px;
-	height: 1580px;
+	width: 1450px;
+	height: 1180px;
 	align-items: center;
 	margin: auto;
 	margin-top: 30px;
 }
+
+
 
 .news_head p {
 	padding-top: 60px;
@@ -565,14 +420,16 @@ label, a{ /*при наведении на стрелки или переклю�
 
 .file2 {
 	height: 420px;
-	width: auto;
+	width: 1450px;
 	margin-top: 80px;
+	display: flex;
+	justify-content: center;
 }
 
 .file2 #news {
-	width: 260px;
+	width: 320px;
 	height: 420px;
-	background: #C5C5C5;
+	background:#ADADAD;
 	display: inline-table;
 	margin-left: 40px;
 	margin-right: 40px;
@@ -581,7 +438,7 @@ label, a{ /*при наведении на стрелки или переклю�
 
 .file2 #news #bold_text {
 
-  font-size: 16px;
+  font-size: 13px;
   font-family: "Franklin Gothic Medium";
   color: rgb(0, 0, 0);
   text-transform: uppercase;
@@ -602,7 +459,7 @@ label, a{ /*при наведении на стрелки или переклю�
 
 .file2 #news p {
 	
-  font-size: 15px;
+  font-size: 12px;
   font-family: "Franklin Gothic Book";
   color: rgb(0, 0, 0);
   text-transform: uppercase;
@@ -618,13 +475,13 @@ label, a{ /*при наведении на стрелки или переклю�
 
 }
 
-.file2 .img {
-	display: flex;
-	-ms-align-items: flex-start;
-	align-items: flex-start;
-	width: 260px;
+.file2 img {
+	
+	width: 310px;
 	height: 260px;
 	background: #6B69D6;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 
 
@@ -692,16 +549,16 @@ label, a{ /*при наведении на стрелки или переклю�
   font-family: "Franklin Gothic Medium";
   color: white;
   font-weight: 100;
-  margin-top: 40px;
+	margin-top: 40px;
+	
   text-align: center;
 
 }
 .study .ramka img {
-	width: 400px;
+	width: 460px;
 	height: 450px;
 	border: 8px solid white;
-	margin-left: 70px;
-	margin-right: 70px;
+	margin-left: 40px;
 }
 
 .study .study_footer {
