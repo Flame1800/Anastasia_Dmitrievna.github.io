@@ -171,7 +171,7 @@ margin-top: 100px;
 }
 .biografy1 img {
 	height: 440px;
-	width: 460px;
+	width: 400px;
 	border: 10px solid white;
 	border-radius: 10px;
 	margin-left: 60px;
@@ -410,29 +410,32 @@ margin-top: 100px;
 
 .news_head p {
 	padding-top: 60px;
-  font-size: 70px;
+  font-size: 75px;
   font-family: "Franklin Gothic Book";
   font-weight: bold;
   color: rgb(41, 135, 232);
   line-height: 1.2;
-  text-align: center;
+	text-align: center;
+	margin-bottom: 120px;
 }
 
 .file2 {
 	height: 420px;
 	width: 1450px;
-	margin-top: 80px;
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 }
 
 .file2 #news {
-	width: 320px;
+	width: 370px;
 	height: 420px;
 	background:#ADADAD;
+	border: solid #ADADAD 3px;
+	border-radius: 20px;
 	display: inline-table;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
 
 }
 
@@ -477,18 +480,18 @@ margin-top: 100px;
 
 .file2 img {
 	
-	width: 310px;
-	height: 260px;
-	background: #6B69D6;
-	margin-top: 5px;
-	margin-left: 5px;
+	width: 380px;
+	height: 290px;
+	border: solid #ADADAD 3px;
+	border-radius: 20px;
+
 }
 
 
 .study {
 	background:url(img/BG_Study.png);
 	background-size: cover;
-	width: auto;
+	width: all;
 	height: 1460px;
 }
 
@@ -529,14 +532,14 @@ margin-top: 100px;
   	font-family: "Franklin Gothic Book";
   	color: white;
   	line-height: 1.2;
-  	margin-right: 40px;
+  	
  }
 
 
 .study .ramka {
 
-	width: 560px;
-	height: 630px;
+	width: 600px;
+	height: 650px;
 	border: 25px solid white;
 	float: left;
 	margin-top: 20px;
@@ -555,10 +558,11 @@ margin-top: 100px;
 
 }
 .study .ramka img {
-	width: 460px;
-	height: 450px;
+	width: 530px;
+	height: 485px;
 	border: 8px solid white;
-	margin-left: 40px;
+	margin-left: 28px;
+	margin-right: 28px;
 }
 
 .study .study_footer {
