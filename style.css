@@ -38,6 +38,30 @@ body {
 
 }
 
+#imagelightbox {
+    position: fixed;
+    z-index: 9999;
+ 
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.imageLightbox
+{
+    selector:       'id="imagelightbox"',   // string;
+    allowedTypes:   'png|jpg|jpeg|gif',     // string;
+    animationSpeed: 250,                    // integer;
+    preloadNext:    true,                   // bool;            silently preload the next image
+    enableKeyboard: true,                   // bool;            enable keyboard shortcuts (arrows Left/Right and Esc)
+    quitOnEnd:      false,                  // bool;            quit after viewing the last image
+    quitOnImgClick: false,                  // bool;            quit when the viewed image is clicked
+    quitOnDocClick: true,                   // bool;            quit when anything but the viewed image is clicked
+    onStart:        false,                  // function/bool;   calls function when the lightbox starts
+    onEnd:          false,                  // function/bool;   calls function when the lightbox quits
+    onLoadStart:    false,                  // function/bool;   calls function when the image load begins
+    onLoadEnd:      false                   // function/bool;   calls function when the image finishes loading
+}
+
 
 .header {
 	padding-top: 0;
@@ -133,7 +157,7 @@ body {
 
 .biografy1 {
 	background: #35ABEB;
-	height: 550px;
+	height: 650px;
 	text-align: flex-start;
 	background-size: 100%;
 	display: flex;
@@ -143,7 +167,7 @@ body {
 }
 
 .biografy1 .main_content {
-margin-top: 100px;
+margin-top: 130px;
 }
 
 
@@ -170,13 +194,15 @@ margin-top: 100px;
   text-align: justify;  
 }
 .biografy1 img {
-	height: 440px;
+
 	width: 400px;
+	height: 470px;
 	border: 10px solid white;
 	border-radius: 10px;
 	margin-left: 60px;
-	margin-top: 60px;
+	margin-top: 80px;
 }
+
 
 .biografy2 {
 	display: flex;
@@ -339,7 +365,7 @@ margin-top: 100px;
 
 	width: 300px;
 	height: 230px;
-	float: right;
+	margin-left: 70px;
 	margin-bottom: 30px;
 
 }
@@ -395,47 +421,52 @@ margin-top: 100px;
 
 .news {
 	height: 1450px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .news .main_content {
 	
-	width: 1450px;
 	height: 1180px;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
-	margin: auto;
-	margin-top: 30px;
+	
 }
 
 
 
 .news_head p {
-	padding-top: 60px;
+	padding-top: 50px;
   font-size: 75px;
   font-family: "Franklin Gothic Book";
   font-weight: bold;
   color: rgb(41, 135, 232);
   line-height: 1.2;
 	text-align: center;
-	margin-bottom: 120px;
+	margin-bottom: 80px;
 }
 
 .file2 {
 	height: 420px;
-	width: 1450px;
+	
 	margin-top: 50px;
 	display: flex;
-	justify-content: center;
+	
+
 }
 
 .file2 #news {
-	width: 370px;
-	height: 420px;
+	width: 280px;
+	height: 380px;
 	background:#ADADAD;
 	border: solid #ADADAD 3px;
 	border-radius: 20px;
-	display: inline-table;
 	margin-left: 20px;
 	margin-right: 20px;
+
+
 
 }
 
@@ -479,13 +510,13 @@ margin-top: 100px;
 }
 
 .file2 img {
-	
-	width: 380px;
-	height: 290px;
-	border: solid #ADADAD 3px;
+	margin-top: 40px;
+	width: 270px;
+	margin-left: 5px;
 	border-radius: 20px;
 
 }
+
 
 
 .study {
@@ -559,8 +590,9 @@ margin-top: 100px;
 }
 .study .ramka img {
 	width: 530px;
-	height: 485px;
+	margin-top: 45px;
 	border: 8px solid white;
+
 	margin-left: 28px;
 	margin-right: 28px;
 }
