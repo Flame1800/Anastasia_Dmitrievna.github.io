@@ -300,22 +300,20 @@ margin-top: 130px;
   font-family: "Franklin Gothic Book";
   color: rgb(255, 255, 255);
   line-height: 1.2;
-  text-align: right;
+  text-align: justify;
   float: right;
-  margin-top: 0;
-  
+	margin-top: 0;
   height: 250px;
   width: 580px; 
  
 }
 
 #ws_2head {
-  text-align: justify;
+  
   font-size: 40px;
   font-family: "Franklin Gothic Book";
   color: rgb(255, 255, 255);
   line-height: 0.75;
-  text-align: left;
   margin: auto;
   float: left;
   
@@ -329,7 +327,8 @@ margin-top: 130px;
   height: 250px;
   width: 580px; 
   margin: 0;
-  float: left;
+	float: left;
+	text-align: justify;
 }
 
 #hr1 {
