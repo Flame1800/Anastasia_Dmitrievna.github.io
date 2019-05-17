@@ -7,9 +7,8 @@ window.onscroll = function showHeader() {
     }
 }
 
-var modal = document.getElementById('myModal');
-var img = document.img;
-var modalImg = document.getElementById('img01');
+
+
 
 
 
